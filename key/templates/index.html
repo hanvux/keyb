@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <form method="POST" action="{{ url_for('analyze') }}">
+            <div>
+                <div>
+                    <label for="number">Choose your accuracy level:</label>
+                    <input id="number" type="number" name="accuracy" class="accuracy-input" value="{{ result }}">
+
+                    <input type="text" name="text" placeholder="Write your message">
+                </div>
+char
+                <br>
+                <div>
+                    <textarea>{{ message }} </textarea>
+                    <br>
+                    <input type="text" name="res">
+                </div>
+
+            </div>
+            <input name = "sub" type="submit" value="Submit">
+        </form>
+        <form>
+
+        </form>
+
+        
+    </body>
+</html>
